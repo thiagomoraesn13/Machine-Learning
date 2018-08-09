@@ -1,0 +1,9 @@
+Jogador,Jogada,Local,Sucesso
+Ala,Arremesso,Casa,Sim
+Ala,Arremesso,Fora,Nao
+Ala,Bloqueio,Casa,Nao
+Ala,Bloqueio,Fora,Nao
+Pivo,Arremesso,Casa,Nao
+Pivo,Arremesso,Fora,Nao
+Pivo,Bloqueio,Casa,Sim
+Pivo,Bloqueio,Fora,Sim

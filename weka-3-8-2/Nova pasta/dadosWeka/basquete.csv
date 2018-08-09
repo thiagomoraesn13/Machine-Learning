@@ -1,0 +1,9 @@
+Jogador;Jogada;Local;Sucesso
+Ala;Arremesso;Casa;Sim
+Ala;Arremesso;Fora;Não
+Ala;Bloqueio;Casa;Não
+Ala;Bloqueio;Fora;Não
+Pivô;Arremesso;Casa;Não
+Pivô;Arremesso;Fora;Não
+Pivô;Bloqueio;Casa;Sim
+Pivô;Bloqueio;Fora;Sim

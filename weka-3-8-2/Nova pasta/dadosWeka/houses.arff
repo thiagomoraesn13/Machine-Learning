@@ -1,0 +1,17 @@
+@relation casas
+
+@attribute area numeric
+@attribute terreno numeric
+@attribute quartos numeric
+@attribute granito numeric
+@attribute banheiror numeric
+@attribute preco numeric
+
+@data
+329,	854,	6,	0,	0,	205000
+302,	935,	5,	1,	1,	224900
+376,	943,	5,	0,	1,	197900
+223,	1315,	4,	1,	0,	189900
+205,	829,	4,	0,	1,	195000
+329,	1858,	6,	1,	1,	325000
+278,	870,	5,	0,	1,	230000

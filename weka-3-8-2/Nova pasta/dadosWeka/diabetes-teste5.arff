@@ -1,0 +1,91 @@
+@relation pima_diabetes-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F5
+
+@attribute preg numeric
+@attribute plas numeric
+@attribute pres numeric
+@attribute skin numeric
+@attribute insu numeric
+@attribute mass numeric
+@attribute pedi numeric
+@attribute age numeric
+@attribute class {tested_negative,tested_positive}
+
+@data
+
+2,197,70,45,543,30.5,0.158,53,tested_positive
+9,119,80,35,0,29,0.263,29,tested_positive
+7,103,66,32,0,39.1,0.344,31,tested_positive
+15,136,70,32,110,37.1,0.153,43,tested_positive
+0,162,76,56,100,53.2,0.759,25,tested_positive
+8,188,78,0,0,47.9,0.137,43,tested_positive
+7,194,68,28,0,35.9,0.745,41,tested_positive
+4,148,60,27,318,30.9,0.15,29,tested_positive
+0,177,60,29,478,34.6,1.072,21,tested_positive
+6,119,50,22,176,27.1,1.318,33,tested_positive
+7,106,60,24,0,26.5,0.296,29,tested_positive
+0,167,0,0,0,32.3,0.839,30,tested_positive
+3,112,74,30,0,31.6,0.197,25,tested_positive
+9,165,88,0,0,30.4,0.302,49,tested_positive
+4,156,75,0,0,48.3,0.238,32,tested_positive
+5,168,64,0,0,32.9,0.135,41,tested_positive
+1,181,64,30,180,34.1,0.328,38,tested_positive
+10,148,84,48,237,37.6,1.001,51,tested_positive
+12,84,72,31,0,29.7,0.297,46,tested_positive
+5,187,76,27,207,43.6,1.034,53,tested_positive
+11,111,84,40,0,46.8,0.925,45,tested_positive
+9,112,82,24,0,28.2,1.282,50,tested_positive
+3,80,82,31,70,34.2,1.292,27,tested_positive
+0,162,76,36,0,49.6,0.364,26,tested_positive
+9,164,78,0,0,32.8,0.148,45,tested_positive
+1,102,74,0,0,39.5,0.293,42,tested_positive
+0,123,72,0,0,36.3,0.258,52,tested_positive
+13,106,70,0,0,34.2,0.251,52,tested_negative
+4,144,58,28,140,29.5,0.287,37,tested_negative
+0,161,50,0,0,21.9,0.254,65,tested_negative
+3,150,76,0,0,21,0.207,37,tested_negative
+6,111,64,39,0,34.2,0.26,24,tested_negative
+2,112,75,32,0,35.7,0.148,21,tested_negative
+1,95,60,18,58,23.9,0.26,22,tested_negative
+8,95,72,0,0,36.8,0.485,57,tested_negative
+3,90,78,0,0,42.7,0.559,21,tested_negative
+4,147,74,25,293,34.9,0.385,30,tested_negative
+2,122,52,43,158,36.2,0.816,28,tested_negative
+1,125,70,24,110,24.3,0.221,25,tested_negative
+2,90,70,17,0,27.3,0.085,22,tested_negative
+7,150,66,42,342,34.7,0.718,42,tested_negative
+2,88,74,19,53,29,0.229,22,tested_negative
+0,114,80,34,285,44.2,0.167,27,tested_negative
+1,90,68,8,0,24.5,1.138,36,tested_negative
+3,111,90,12,78,28.4,0.495,29,tested_negative
+2,100,54,28,105,37.8,0.498,24,tested_negative
+10,115,98,0,0,24,1.022,34,tested_negative
+4,114,64,0,0,28.9,0.126,24,tested_negative
+5,143,78,0,0,45,0.19,47,tested_negative
+3,80,0,0,0,0,0.174,22,tested_negative
+3,96,78,39,0,37.3,0.238,40,tested_negative
+3,99,54,19,86,25.6,0.154,24,tested_negative
+3,125,58,0,0,31.6,0.151,24,tested_negative
+1,77,56,30,56,33.3,1.251,24,tested_negative
+1,88,78,29,76,32,0.365,29,tested_negative
+1,84,64,23,115,36.9,0.471,28,tested_negative
+0,91,80,0,0,32.4,0.601,27,tested_negative
+1,143,86,30,330,30.1,0.892,23,tested_negative
+1,138,82,0,0,40.1,0.236,28,tested_negative
+6,123,72,45,230,33.6,0.733,34,tested_negative
+5,95,72,33,0,37.7,0.37,27,tested_negative
+3,88,58,11,54,24.8,0.267,22,tested_negative
+2,108,64,0,0,30.8,0.158,21,tested_negative
+10,92,62,0,0,25.9,0.167,31,tested_negative
+3,103,72,30,152,27.6,0.73,27,tested_negative
+1,106,70,28,135,34.2,0.142,22,tested_negative
+4,197,70,39,744,36.7,2.329,31,tested_negative
+8,91,82,0,0,35.6,0.587,68,tested_negative
+5,136,82,0,0,0,0.64,69,tested_negative
+2,90,60,0,0,23.5,0.191,25,tested_negative
+4,110,76,20,100,28.4,0.118,27,tested_negative
+3,102,74,0,0,29.5,0.121,32,tested_negative
+1,111,94,0,0,32.8,0.265,45,tested_negative
+2,105,75,0,0,23.3,0.56,53,tested_negative
+13,153,88,37,140,40.6,1.174,39,tested_negative
+4,95,70,32,0,32.1,0.612,24,tested_negative
+2,122,70,27,0,36.8,0.34,27,tested_negative

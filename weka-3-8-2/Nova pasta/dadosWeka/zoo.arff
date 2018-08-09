@@ -1,0 +1,203 @@
+% Changes to WEKA Format: SRG - November 1994
+%	1. Boolean attributes changed from 1 and 0 to Enumerated attribute with
+%          values {true and false}
+%       2. Class Number (Attribute 18) changed to an Enumerated type with
+%	   values {1,2,3,4,5,6,7} 
+%
+% December 1997 - Changed class attribute values to semi-sensible names
+%
+% 1. Title: Zoo database
+% 
+% 2. Source Information
+%    -- Creator: Richard Forsyth
+%    -- Donor: Richard S. Forsyth 
+%              8 Grosvenor Avenue
+%              Mapperley Park
+%              Nottingham NG3 5DX
+%              0602-621676
+%    -- Date: 5/15/1990
+%  
+% 3. Past Usage:
+%    -- None known other than what is shown in Forsyth's PC/BEAGLE User's Guide.
+% 
+% 4. Relevant Information:
+%    -- A simple database containing 17 Boolean-valued attributes.  The "type"
+%       attribute appears to be the class attribute.  Here is a breakdown of
+%       which animals are in which type: (I find it unusual that there are
+%       2 instances of "frog" and one of "girl"!)
+% 
+%       Class# Set of animals:
+%       ====== ===============================================================
+%            1 (41) aardvark, antelope, bear, boar, buffalo, calf,
+%                   cavy, cheetah, deer, dolphin, elephant,
+%                   fruitbat, giraffe, girl, goat, gorilla, hamster,
+%                   hare, leopard, lion, lynx, mink, mole, mongoose,
+%                   opossum, oryx, platypus, polecat, pony,
+%                   porpoise, puma, pussycat, raccoon, reindeer,
+%                   seal, sealion, squirrel, vampire, vole, wallaby,wolf
+%            2 (20) chicken, crow, dove, duck, flamingo, gull, hawk,
+%                   kiwi, lark, ostrich, parakeet, penguin, pheasant,
+%                   rhea, skimmer, skua, sparrow, swan, vulture, wren
+%            3 (5)  pitviper, seasnake, slowworm, tortoise, tuatara 
+%            4 (13) bass, carp, catpeixe, chub, dogpeixe, haddock,
+%                   herring, pike, piranha, seahorse, sole, stingray, tuna
+%            5 (4)  frog, frog, newt, toad 
+%            6 (8)  flea, gnat, honeybee, housefly, ladypassaro, moth, termite, wasp
+%            7 (10) clam, crab, craypeixe, lobster, octopus,
+%                   scorpion, seawasp, slug, starpeixe, worm
+% 
+% 5. Number of Instances: 101
+% 6. Number of Attributes: 18 (animal name, 15 Boolean attributes, 2 numerics)
+% 7. Attribute Information: (name of attribute and type of value domain)
+%    1. animal name:	Unique for each instance
+%    2. hair		Boolean
+%    3. feathers	Boolean
+%    4. eggs		Boolean
+%    5. milk		Boolean
+%    6. airborne	Boolean
+%    7. aquatic		Boolean
+%    8. predator	Boolean
+%    9. toothed		Boolean
+%   10. backbone	Boolean
+%   11. breathes	Boolean
+%   12. venomous	Boolean
+%   13. fins		Boolean
+%   14. legs		Numeric (set of values: {0,2,4,5,6,8})
+%   15. tail		Boolean
+%   16. domestic	Boolean
+%   17. catsize		Boolean
+%   18. type		Numeric (integer values in range [1,7])
+% 
+% 8. Missing Attribute Values: None
+% 9. Class Distribution: Given above
+   
+@RELATION zoo
+
+% {aardvark,antelope,bass,bear,boar,buffalo,calf,carp,catpeixe,cavy,cheetah,chicken,chub,clam,crab,craypeixe,crow,deer,dogpeixe,dolphin,dove,duck,elephant,flamingo,flea,frog,fruitbat,giraffe,girl,gnat,goat,gorilla,gull,haddock,hamster,hare,hawk,herring,honeybee,housefly,kiwi,ladypassaro,lark,leopard,lion,lobster,lynx,mink,mole,mongoose,moth,newt,octopus,opossum,oryx,ostrich,parakeet,penguin,pheasant,pike,piranha,pitviper,platypus,polecat,pony,porpoise,puma,pussycat,raccoon,reindeer,rhea,scorpion,seahorse,seal,sealion,seasnake,seawasp,skimmer,skua,slowworm,slug,sole,sparrow,squirrel,starpeixe,stingray,swan,termite,toad,tortoise,tuatara,tuna,vampire,vole,vulture,wallaby,wasp,wolf,worm,wren}
+@ATTRIBUTE animal {porco-da-terra,antilope,robalo,urso,javali,bufalo,vitela,carpa,bagre,prea,chita,galinha,caboz,molusco,caranguejo,lagostim,corvo,veado,tubarao,golfinho,pomba,pato,elefante,flamingo,pulga,sapo,morcego-de-fruta,girafa,menina,mosquito,cabra,gorila,gaivota,hadoque,hamster,lebre,falcao,arenque,abelha,mosca,kiwi,joaninha,cotovia,leopardo,leao,lagosta,lince,visom,toupeira,mangusto,traca,tritao,polvo,gamba,orix,avestruz,periquito,pinguim,faisao,lucio-peixe,piranha,cobra-covinha,ornitorrinco,doninha,ponei,boto,puma,gatinho,guaxinim,rena,ema,escorpiao,cavalo-marinho,foca,leao-marinho,serpente-marinha,vespa-do-mar,bico-de-tesoura,mandriao,slowworm-lagarto,lesma,linguado,pardal,esquilo,estrela-do-mar,arraia,cisne,cupim,sapo-toad,tartaruga,tuatara,atum,vampiro,ratazana,abutre,wallaby,vespa,lobo,minhoca,carrica}
+@ATTRIBUTE pelos {false, true}
+@ATTRIBUTE penas {false, true}
+@ATTRIBUTE ovos {false, true}
+@ATTRIBUTE leite {false, true}
+@ATTRIBUTE aereo {false, true}
+@ATTRIBUTE aquatico {false, true}
+@ATTRIBUTE predador {false, true}
+@ATTRIBUTE tem-dentes {false, true}
+@ATTRIBUTE espinha-dorsal {false, true}
+@ATTRIBUTE respira {false, true}
+@ATTRIBUTE venenoso {false, true}
+@ATTRIBUTE barbatanas {false, true}
+@ATTRIBUTE pernas INTEGER [0,9]
+@ATTRIBUTE cauda {false, true}
+@ATTRIBUTE domestico {false, true}
+@ATTRIBUTE tam-de-gato {false, true}
+@ATTRIBUTE tipo { mamifero, passaro, reptil, peixe, anfibio, inseto, invertebrado }
+
+@DATA
+%
+% Instances (101):
+%
+porco-da-terra,true,false,false,true,false,false,true,true,true,true,false,false,4,false,false,true,mamifero
+antilope,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+robalo,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,peixe
+urso,true,false,false,true,false,false,true,true,true,true,false,false,4,false,false,true,mamifero
+javali,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+bufalo,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+vitela,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,true,mamifero
+carpa,false,false,true,false,false,true,false,true,true,false,false,true,0,true,true,false,peixe
+bagre,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,peixe
+prea,true,false,false,true,false,false,false,true,true,true,false,false,4,false,true,false,mamifero
+chita,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+galinha,false,true,true,false,true,false,false,false,true,true,false,false,2,true,true,false,passaro
+caboz,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,peixe
+molusco,false,false,true,false,false,false,true,false,false,false,false,false,0,false,false,false,invertebrado
+caranguejo,false,false,true,false,false,true,true,false,false,false,false,false,4,false,false,false,invertebrado
+lagostim,false,false,true,false,false,true,true,false,false,false,false,false,6,false,false,false,invertebrado
+corvo,false,true,true,false,true,false,true,false,true,true,false,false,2,true,false,false,passaro
+veado,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+tubarao,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,true,peixe
+golfinho,false,false,false,true,false,true,true,true,true,true,false,true,0,true,false,true,mamifero
+pomba,false,true,true,false,true,false,false,false,true,true,false,false,2,true,true,false,passaro
+pato,false,true,true,false,true,true,false,false,true,true,false,false,2,true,false,false,passaro
+elefante,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+flamingo,false,true,true,false,true,false,false,false,true,true,false,false,2,true,false,true,passaro
+pulga,false,false,true,false,false,false,false,false,false,true,false,false,6,false,false,false,inseto
+sapo,false,false,true,false,false,true,true,true,true,true,false,false,4,false,false,false,anfibio
+sapo,false,false,true,false,false,true,true,true,true,true,true,false,4,false,false,false,anfibio
+morcego-de-fruta,true,false,false,true,true,false,false,true,true,true,false,false,2,true,false,false,mamifero
+girafa,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+menina,true,false,false,true,false,false,true,true,true,true,false,false,2,false,true,true,mamifero
+mosquito,false,false,true,false,true,false,false,false,false,true,false,false,6,false,false,false,inseto
+cabra,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,true,mamifero
+gorila,true,false,false,true,false,false,false,true,true,true,false,false,2,false,false,true,mamifero
+gaivota,false,true,true,false,true,true,true,false,true,true,false,false,2,true,false,false,passaro
+hadoque,false,false,true,false,false,true,false,true,true,false,false,true,0,true,false,false,peixe
+hamster,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,false,mamifero
+lebre,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,false,mamifero
+falcao,false,true,true,false,true,false,true,false,true,true,false,false,2,true,false,false,passaro
+arenque,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,peixe
+abelha,true,false,true,false,true,false,false,false,false,true,true,false,6,false,true,false,inseto
+mosca,true,false,true,false,true,false,false,false,false,true,false,false,6,false,false,false,inseto
+kiwi,false,true,true,false,false,false,true,false,true,true,false,false,2,true,false,false,passaro
+joaninha,false,false,true,false,true,false,true,false,false,true,false,false,6,false,false,false,inseto
+cotovia,false,true,true,false,true,false,false,false,true,true,false,false,2,true,false,false,passaro
+leopardo,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+leao,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+lagosta,false,false,true,false,false,true,true,false,false,false,false,false,6,false,false,false,invertebrado
+lince,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+visom,true,false,false,true,false,true,true,true,true,true,false,false,4,true,false,true,mamifero
+toupeira,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,false,mamifero
+mangusto,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+traca,true,false,true,false,true,false,false,false,false,true,false,false,6,false,false,false,inseto
+tritao,false,false,true,false,false,true,true,true,true,true,false,false,4,true,false,false,anfibio
+polvo,false,false,true,false,false,true,true,false,false,false,false,false,8,false,false,true,invertebrado
+gamba,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,false,mamifero
+orix,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,true,mamifero
+avestruz,false,true,true,false,false,false,false,false,true,true,false,false,2,true,false,true,passaro
+periquito,false,true,true,false,true,false,false,false,true,true,false,false,2,true,true,false,passaro
+pinguim,false,true,true,false,false,true,true,false,true,true,false,false,2,true,false,true,passaro
+faisao,false,true,true,false,true,false,false,false,true,true,false,false,2,true,false,false,passaro
+lucio-peixe,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,true,peixe
+piranha,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,peixe
+cobra-covinha,false,false,true,false,false,false,true,true,true,true,true,false,0,true,false,false,reptil
+ornitorrinco,true,false,true,true,false,true,true,false,true,true,false,false,4,true,false,true,mamifero
+doninha,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+ponei,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,true,mamifero
+boto,false,false,false,true,false,true,true,true,true,true,false,true,0,true,false,true,mamifero
+puma,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+gatinho,true,false,false,true,false,false,true,true,true,true,false,false,4,true,true,true,mamifero
+guaxinim,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+rena,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,true,mamifero
+ema,false,true,true,false,false,false,true,false,true,true,false,false,2,true,false,true,passaro
+escorpiao,false,false,false,false,false,false,true,false,false,true,true,false,8,true,false,false,invertebrado
+cavalo-marinho,false,false,true,false,false,true,false,true,true,false,false,true,0,true,false,false,peixe
+foca,true,false,false,true,false,true,true,true,true,true,false,true,0,false,false,true,mamifero
+leao-marinho,true,false,false,true,false,true,true,true,true,true,false,true,2,true,false,true,mamifero
+serpente-marinha,false,false,false,false,false,true,true,true,true,false,true,false,0,true,false,false,reptil
+vespa-do-mar,false,false,true,false,false,true,true,false,false,false,true,false,0,false,false,false,invertebrado
+bico-de-tesoura,false,true,true,false,true,true,true,false,true,true,false,false,2,true,false,false,passaro
+mandriao,false,true,true,false,true,true,true,false,true,true,false,false,2,true,false,false,passaro
+slowworm-lagarto,false,false,true,false,false,false,true,true,true,true,false,false,0,true,false,false,reptil
+lesma,false,false,true,false,false,false,false,false,false,true,false,false,0,false,false,false,invertebrado
+linguado,false,false,true,false,false,true,false,true,true,false,false,true,0,true,false,false,peixe
+pardal,false,true,true,false,true,false,false,false,true,true,false,false,2,true,false,false,passaro
+esquilo,true,false,false,true,false,false,false,true,true,true,false,false,2,true,false,false,mamifero
+estrela-do-mar,false,false,true,false,false,true,true,false,false,false,false,false,5,false,false,false,invertebrado
+arraia,false,false,true,false,false,true,true,true,true,false,true,true,0,true,false,true,peixe
+cisne,false,true,true,false,true,true,false,false,true,true,false,false,2,true,false,true,passaro
+cupim,false,false,true,false,false,false,false,false,false,true,false,false,6,false,false,false,inseto
+sapo-toad,false,false,true,false,false,true,false,true,true,true,false,false,4,false,false,false,anfibio
+tartaruga,false,false,true,false,false,false,false,false,true,true,false,false,4,true,false,true,reptil
+tuatara,false,false,true,false,false,false,true,true,true,true,false,false,4,true,false,false,reptil
+atum,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,true,peixe
+vampiro,true,false,false,true,true,false,false,true,true,true,false,false,2,true,false,false,mamifero
+ratazana,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,false,mamifero
+abutre,false,true,true,false,true,false,true,false,true,true,false,false,2,true,false,true,passaro
+wallaby,true,false,false,true,false,false,false,true,true,true,false,false,2,true,false,true,mamifero
+vespa,true,false,true,false,true,false,false,false,false,true,true,false,6,false,false,false,inseto
+lobo,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mamifero
+minhoca,false,false,true,false,false,false,false,false,false,true,false,false,0,false,false,false,invertebrado
+carrica,false,true,true,false,true,false,false,false,true,true,false,false,2,true,false,false,passaro
+%
+%
+%

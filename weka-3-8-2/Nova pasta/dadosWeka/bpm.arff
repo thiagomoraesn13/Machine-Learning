@@ -1,0 +1,22 @@
+@relation BPM
+
+@attribute Idade numeric
+@attribute Altura numeric
+@attribute Peso numeric
+@attribute BPM numeric
+
+@data
+
+73, 165, 63, 66
+57, 177, 68, 86
+50, 164, 75, 80
+71, 170, 52, 92
+32, 173, 75, 74
+31, 168, 80, 69
+36, 185, 95, 85
+36, 176, 65, 85
+59, 174, 74, 63
+64, 160, 63, 65
+37, 175, 82, 62
+37, 176, 72, 55
+45, 175, 75, 70
